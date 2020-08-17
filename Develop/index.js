@@ -55,18 +55,6 @@ function promptUser() {
     ]);
 }
 
-// function to write README file
-// function writeToFile(fileName, data) {
-//     return `
-//   ${ data.title }
-    
-//   `;
-// }
-
-// function to initialize program
-// function init() {
-
-// }
 
 //function to write README file
 function writeToFile(data) {
@@ -95,21 +83,13 @@ Email: ${ data.emailAddress }\n`
 ;
 }
 
-// function writeToFile(fileName, data) {
-//   return `
-// ${ data.title }
-  
-// `;
-// }
-
-
-promptUser()
+// function call to initialize program
+function init() {
+  promptUser()
   .then(function(data) {
-    // console.log(data);
     const sample = writeToFile(data);
     console.log(sample);
     return writeFileAsync("README.md", sample);
-
   })
   .then(function() {
     // console.log("successful");
@@ -117,17 +97,6 @@ promptUser()
   .catch(function(error) {
     console.log(error);
   });
-// function call to initialize program
-// init()
-    // .then(function(answers) {
-    //     const html = generateHTML(answers);
+}
 
-    //     return writeFileAsync("index.html", html);
-    // })
-    // .then(function() {
-    //     console.log("Successfully wrote to index.html");
-    // })
-    // .catch(function(err) {
-    //     console.log(err);
-    // });
-// ;    
+init();

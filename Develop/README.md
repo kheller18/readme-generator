@@ -1,35 +1,35 @@
-# dkdk
+# README  Generator
 
-ddkdk
+This application will make creating README's for your repository effortless.
 
 ## Table of Contents
 
-  1. [Installation](#installation)
-  2. [Usage](#usage)
-  3. [License](#license)
-  4. [Contributing](#contributing)
-  5. [Tests](#tests)
-  6. [Questions](#questions)
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [License](#license)
+  * [Contributing](#contributing)
+  * [Tests](#tests)
+  * [Questions](#questions)
 
 ### Installation
 
-dkdkd
+Install node, then simply press npm install
 
 ### Usage
 
-dkdkd
+use
 
 ### License
 
-k
+sdkjfl;l
 
 ### Contributing
 
-dkk
+dklf
 
 ### Tests
 
-dkk
+skdk;ld
 
 ### Questions
 

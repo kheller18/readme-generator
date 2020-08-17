@@ -1,0 +1,23 @@
+{
+  "name": "readme-generator",
+  "version": "1.0.0",
+  "description": "package you can install to generate readme's for your projects ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kheller18/readme-generator.git"
+  },
+  "keywords": [
+    "readme",
+    "generator"
+  ],
+  "author": "Keenan Heller",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kheller18/readme-generator/issues"
+  },
+  "homepage": "https://github.com/kheller18/readme-generator#readme"
+}
