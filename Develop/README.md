@@ -1,6 +1,6 @@
-# README  Generator
+# fk
 
-This application will make creating README's for your repository effortless.
+d
 
 ## Table of Contents
 
@@ -13,26 +13,30 @@ This application will make creating README's for your repository effortless.
 
 ### Installation
 
-Install node, then simply press npm install
+
 
 ### Usage
 
-use
+
 
 ### License
 
-sdkjfl;l
+Licensed under MIT ![alt text](https://img.shields.io/github/license//fk?style=plastic)
+
 
 ### Contributing
 
-dklf
+
 
 ### Tests
 
-skdk;ld
+
 
 ### Questions
 
-[GitHub: kheller18](https://github.com/kheller18)
+[GitHub: ](https://github.com/)
 
-Email: keenanaheller@gmail.com
+Email: 
+
+  * Please feel free to contact me at the email address provided above.  I will be happy to answer any questions.  Feedback is gladly welcomed.
+  

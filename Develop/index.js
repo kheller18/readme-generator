@@ -10,12 +10,17 @@ function promptUser() {
         {
           type: "input",
           name: "title",
-          message: "Project Name:"
+          message: "Project name:"
         },
         {
           type: "input",
           name: "description",
-          message: "Project Description:"
+          message: "Project description:"
+        },
+        {
+          type: "input",
+          name: "screenshot",
+          message: "Screenshot of your application (url):"
         },
         {
           type: "input",
@@ -38,19 +43,20 @@ function promptUser() {
           message: "Test instructions:"
         },
         {
-        type: "input",
-        name: "license",
-        message: "License:"
+          type: "list",
+          name: "license",
+          message: "License:",
+          choices: ['MIT', 'Apache', 'GNU GPLv3']
         },
         {
-        type: "input",
-        name: "githubUsername",
-        message: "Github username:"
+          type: "input",
+          name: "githubUsername",
+          message: "Github username:"
         },
         {
-        type: "input",
-        name: "emailAddress",
-        message: "Email address:"
+          type: "input",
+          name: "emailAddress",
+          message: "Email address:"
         }  
     ]);
 }
@@ -72,23 +78,45 @@ ${data.installationInstructions}\n
 ### Usage\n
 ${ data.usageInformation }\n
 ### License\n
-${ data.license }\n
+Licensed under ${ data.license } ![alt text](https://img.shields.io/github/license/${ data.githubUsername }/${ data.title }?style=plastic)
+\n
 ### Contributing\n
 ${ data.contributionGuidelines }\n
 ### Tests\n
 ${ data.testInstructions }\n
 ### Questions\n
 [GitHub: ${ data.githubUsername }](https://github.com/${ data.githubUsername })\n
-Email: ${ data.emailAddress }\n`
+Email: ${ data.emailAddress }\n
+  * Please feel free to contact me at the email address provided above.  I will be happy to answer any questions.  Feedback is gladly welcomed.
+  `
+  
 ;
 }
 
-// function call to initialize program
+// function getBadge(data) {
+//   let url = '';
+//   switch(data.license) {
+//     case 'MIT': 
+//       url = `(https://img.shields.io/github/license/${ data.githubUsername }/${ data.title }?style=plastic)`
+//       break;
+//     case "Apache":
+//       url = `https://shields.io/category/license/aur/license/:${ npmPackage }`
+//       break;
+//     case "GNU GPLv3":
+//       url = `https://shields.io/category/license/cran/l/:${ npmPackage }`
+//       break;
+//   }
+//   return url;
+// }
+
 function init() {
   promptUser()
   .then(function(data) {
+    console.log(data);
+    // licenseType = getBadge(data);
     const sample = writeToFile(data);
     console.log(sample);
+    // console.log(licenseType);
     return writeFileAsync("README.md", sample);
   })
   .then(function() {
@@ -99,4 +127,5 @@ function init() {
   });
 }
 
+// function call to initialize program
 init();
