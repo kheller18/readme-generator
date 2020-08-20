@@ -9,7 +9,7 @@
 ## Description
 
   A node.js application to simplify readme creation for your projects.
-  ![application screenshot](../readme-generator-screen)
+  ![application screenshot](../readme-generator-screen.png)
 
 
 ## Table of Contents
@@ -67,7 +67,7 @@
 
 ## 5. Tests
 
-  No tests currently associated
+  No tests currently associated.
 
 
 ## 6. Questions
