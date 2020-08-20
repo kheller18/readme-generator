@@ -332,13 +332,13 @@ ${ data.description }\n
 
 ## 1. Installation ##\n
   1. Download [repository](${ data.repositoryUrl })\n
-    \tGit clone ${ data.repositoryUrl }\n
+\tGit clone ${ data.repositoryUrl }\n
   2. Install dependencies\n
-    \t${data.installationInstructions}\n
+\t${data.installationInstructions}\n
 
 
 ## 2. Usage ##\n
-  ${ data.usageInformation }\n
+\t${ data.usageInformation }\n
   
 
 ## 3. License ##\n

@@ -8,7 +8,7 @@
 
 
 ## Description ##
-A node.js application to simplify readme creation
+A node.js application to simplify readme creation.  Just answer the questions and a readme file will be automatically generated.
 
 ![alt text](../readme-generator-screen.png)
 
@@ -29,17 +29,17 @@ A node.js application to simplify readme creation
 
   1. Download [repository](https://github.com/kheller18/readme-generator)
 
-    	Git clone https://github.com/kheller18/readme-generator
+	Git clone https://github.com/kheller18/readme-generator
 
   2. Install dependencies
 
-    	npm install
+	npm install
 
 
 
 ## 2. Usage ##
 
-  node index.js
+	node index.js
 
   
 
@@ -79,7 +79,7 @@ A node.js application to simplify readme creation
 
 ## 5. Tests ##
 
-  There are no tests currently associated to this project
+  No tests currently associated
 
 
 
