@@ -1,3 +1,4 @@
+
 # 
 
 ![alt text](
@@ -5,15 +6,16 @@
       )
 
 
-## Description
+## Description ##
 
-![alt text](/Users/keenanheller/Desktop/bootcamp-homeworks/readme-generator/readme-generator-screen.png)
-
-
+![alt text](../readme-generator-screen.png)
 
 
 
-## Table of Contents
+
+
+## Table of Contents ##
+
   1. [Installation](#1-installation)
   2. [Usage](#2-usage)
   3. [License](#3-license)
@@ -22,7 +24,9 @@
   6. [Questions](#6-questions)
 
 
-## 1. Installation
+
+## 1. Installation ##
+
   1. Download [repository]()
 
     	Git clone 
@@ -33,11 +37,11 @@
 
 
 
-## 2. Usage
+## 2. Usage ##
     
   
 
-## 3. License
+## 3. License ##
 	
     Copyright (C) 2020 
 
@@ -56,17 +60,17 @@
       
 
 
-## 4. Contributing
+## 4. Contributing ##
   * [](https://github.com/)
 
 
-## 5. Tests
-  
+## 5. Tests ##
+    
 
 
-## 6. Questions
+## 6. Questions ##
 
-  * [GitHub: ](https://github.com/)
+  * [GitHub: ](https://github.com/)  
 
-  * Email: 
+  * Email:   
     * Please feel free to contact me at the email address provided above.  I will be happy to answer any questions.  Feedback is gladly welcomed and appreciated!

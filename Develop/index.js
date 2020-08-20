@@ -311,53 +311,54 @@ function license(type, userName) {
 
 //function to write README file
 function writeToFile(data, licenseInfo, badge) {
-  return `# ${ data.title }\n
+  return `
+# ${ data.title }\n
 ![alt text](${ badge })
 
 
-## Description
+## Description ##
 ${ data.description }
-![alt text](../${ data.screenshot })
+![alt text](../readme-generator-screen.png)
 
 
 
 
 
-## Table of Contents
+## Table of Contents ##\n
   1. [Installation](#1-installation)
   2. [Usage](#2-usage)
   3. [License](#3-license)
   4. [Contributing](#4-contributing)
   5. [Tests](#5-tests)
-  6. [Questions](#6-questions)
+  6. [Questions](#6-questions)\n
 
 
-## 1. Installation
+## 1. Installation ##\n
   1. Download [repository](${ data.repositoryUrl })\n
     \tGit clone ${ data.repositoryUrl }\n
   2. Install dependencies\n
     \t${data.installationInstructions}\n
 
 
-## 2. Usage
+## 2. Usage ##
   ${ data.usageInformation }  
   
 
-## 3. License
+## 3. License ##
 \t${ licenseInfo }
 
 
-## 4. Contributing
+## 4. Contributing ##
   * [${ data.userName }](https://github.com/${ data.githubUsername })
 
 
-## 5. Tests
-  ${ data.testInstructions }
+## 5. Tests ##
+  ${ data.testInstructions }  
 
 
-## 6. Questions\n
-  * [GitHub: ${ data.githubUsername }](https://github.com/${ data.githubUsername })\n
-  * Email: ${ data.emailAddress }
+## 6. Questions ##\n
+  * [GitHub: ${ data.githubUsername }](https://github.com/${ data.githubUsername })  \n
+  * Email: ${ data.emailAddress }  
     * Please feel free to contact me at the email address provided above.  I will be happy to answer any questions.  Feedback is gladly welcomed and appreciated!`
 ;
 }
@@ -369,8 +370,6 @@ function init() {
     const licenseText = license(data.license, data.userName);
     const licenseBadge = getBadge(data.license)
     const sample = writeToFile(data, licenseText, licenseBadge);
-    // console.log(licenseText);
-    // console.log(sample);
     return writeFileAsync("README.md", sample);
   })
   .then(function() {
