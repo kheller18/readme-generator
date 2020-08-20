@@ -31,7 +31,7 @@ function promptUser() {
       {
         type: "input",
         name: "screenshot",
-        message: "What is the relative path to a screenshot of your application?"
+        message: "What is the relative path to a screenshot of your application (If one folder up, type '../image.png')?"
       },
       {
         type: "input",
@@ -313,15 +313,12 @@ function license(type, userName) {
 function writeToFile(data, licenseInfo, badge) {
   return `
 # ${ data.title }\n
-![alt text](${ badge })
+![alt text](${ badge })\n
 
 
 ## Description ##
-${ data.description }
-![alt text](../readme-generator-screen.png)
-
-
-
+${ data.description }\n
+![alt text](${ data.screenshot })\n
 
 
 ## Table of Contents ##\n
@@ -340,33 +337,32 @@ ${ data.description }
     \t${data.installationInstructions}\n
 
 
-## 2. Usage ##
-  ${ data.usageInformation }  
+## 2. Usage ##\n
+  ${ data.usageInformation }\n
   
 
-## 3. License ##
-\t${ licenseInfo }
+## 3. License ##\n
+\t${ licenseInfo }\n
 
 
-## 4. Contributing ##
-  * [${ data.userName }](https://github.com/${ data.githubUsername })
+## 4. Contributing ##\n
+  * [${ data.userName }](https://github.com/${ data.githubUsername })\n
 
 
-## 5. Tests ##
-  ${ data.testInstructions }  
+## 5. Tests ##\n
+  ${ data.testInstructions }\n
 
 
 ## 6. Questions ##\n
-  * [GitHub: ${ data.githubUsername }](https://github.com/${ data.githubUsername })  \n
-  * Email: ${ data.emailAddress }  
-    * Please feel free to contact me at the email address provided above.  I will be happy to answer any questions.  Feedback is gladly welcomed and appreciated!`
+  + [GitHub Profile](https://github.com/${ data.githubUsername })
+  + Email: ${ data.emailAddress }  
+    + Please feel free to contact me at the email address provided above.  I will be happy to answer any questions.  Feedback is gladly welcomed and appreciated!`
 ;
 }
 
 function init() {
   promptUser()
   .then(function(data) {
-    console.log(data.screenshot);
     const licenseText = license(data.license, data.userName);
     const licenseBadge = getBadge(data.license)
     const sample = writeToFile(data, licenseText, licenseBadge);
